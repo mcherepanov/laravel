@@ -11,6 +11,11 @@
 |
 */
 
-Route::view('/', 'welcome');
+//Route::view('/', 'welcome');
 
-Route::get('person_{var1?}_{var2?}', 'TestController@user');
+//Route::get('person_{var1?}_{var2?}', 'TestController@user');
+Route::get('/','QueueController@action');
+
+//Route::get('/','QueueController@action');
+
+Route::get('/action_{action?}','QueueController@action');
